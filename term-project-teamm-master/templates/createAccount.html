@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>createAccount</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <header class="p-3 text-bg-dark">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <img src="static_img/teamM.png" class = "logo">
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="/login" class="nav-link px-2 text-secondary">Home</a></li>
+          <li><a href="/public" class="nav-link px-2 text-white">Reviews</a></li>
+        </ul>
+
+        <div class="big-button-div">
+          <div class = "public">
+            <a href="/"><button class="go-back-button">GO BACK</button></a>
+          </div>
+        </div>
+
+        <div class="text-end">
+
+
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-content-div">
+    <div class="login-cluster">
+      <h4 class="mb-3">CREATE ACCOUNT</h4>
+      <form action="/submit" method="post">
+        <div class="row g-3">
+
+          <div class="input-group has-validation">
+            <span class="input-group-text"><img class="person" src="static_img/person.png"></span>
+            <input type="text" class="form-control" id="username" placeholder="Username" name="username">
+          <div class="invalid-feedback">
+              Your username is required.
+            </div>
+          </div>
+
+          <div class="input-group has-validation">
+            <span class="input-group-text">🔒</span>
+            <input type="text" class="form-control" id="password" placeholder="Password" name="password">
+          <div class="invalid-feedback">
+              Your password is required.
+            </div>
+          </div>
+
+          <div class = "button-group1 mt-3">
+              <div id="output_text"></div>
+              <div class = "button-div">
+                <input class="button" type="submit" name="action" value="CREATE">
+              </div>
+
+          </div>
+      </form>
+
+
+
+    </div>
+</div>
+
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevents the form from submitting in the traditional way
+
+            var username = document.querySelector('input[name="username"]').value;
+            var password = document.querySelector('input[name="password"]').value;
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/submit', true);
+            xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    if (xhr.responseText === 'Failure') {
+                        // Prevents the form from submitting in the traditional way
+                        event.preventDefault();
+                        document.getElementById('output_text').innerHTML = 'Error: Username already taken. Please try again....';
+                        setTimeout(function() {
+                        // Remove the error message after 5 seconds (5000 milliseconds)
+                        document.getElementById('output_text').innerHTML = '';
+                        }, 5000);
+                    }
+                    else {
+                        document.getElementById('output_text').innerHTML = 'Successfully Created Account. Please press "GO BACK"';
+
+                    }
+                }
+            }
+
+            xhr.send('action=CREATE&username=' + encodeURIComponent(username) + '&password=' + encodeURIComponent(password));
+        });
+    </script>
+
+
+</body>
+</html>
