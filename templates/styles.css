@@ -1,0 +1,491 @@
+h1 {
+    font-size: 4rem;
+    color: red;
+}
+.person{
+    height: 16px;
+    width:16px;
+}
+
+#output_text{
+    color: red;
+}
+
+label{
+    color: white;
+}
+#text{
+    width: 80vw;
+    height: 30vh;
+}
+
+.navigate{
+    color: white;
+    background-color: transparent;
+    border: 0;
+    font-size: 1.5em;
+}
+.nav-link{
+    font-size: 1.5em !important;
+}
+
+.list{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content{
+}
+
+.reviews_history{
+    list-style-type: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.reviews{
+    list-style-type: none;
+    /* margin: 10; */
+    font-size: 1rem;
+    color: black;
+}
+h5{
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#title{
+    text-align: center;
+}
+
+
+@media(min-width: 960px){
+    .login-cluster{
+        width: 400px;
+        text-align: center !important;
+    }
+    .content-cluster{
+        width: 600px;
+        text-align: center !important;
+    }
+
+    #comment-input{
+        z-index: 10!important;
+        width: 500px;
+      }
+      .comment-box{
+        display: inline-flex;
+      }
+    .main-content-div{
+        padding-left: 300px;
+        padding-right: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10vh;
+
+    }
+
+    .main-content-div-public{
+        border-radius: 4px;
+        margin-top: -40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10vh;
+        background-color: white;
+        min-height: 100vh;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .top-layer{
+        background-color: gray;
+        height: 100px;
+    }
+}
+
+@media(min-width: 860px){
+    .login-cluster{
+        width: 400px;
+        text-align: center !important;
+    }
+    .content-cluster{
+        width: 600px;
+        text-align: center !important;
+    }
+
+    #comment-input{
+        z-index: 10!important;
+        width: 500px;
+    }
+    .comment-box{
+        display: inline-flex;
+    }
+    .main-content-div{
+        padding-left: 300px;
+        padding-right: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10vh;
+
+    }
+
+    .main-content-div-public{
+        border-radius: 4px;
+        margin-top: -40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10vh;
+        background-color: white;
+        min-height: 100vh;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .top-layer{
+        background-color: gray;
+        height: 100px;
+    }
+}
+
+
+
+@media(max-width: 860px){
+    .login-cluster{
+        width: 400px;
+        text-align: center !important;
+    }
+    .content-cluster{
+        width: 600px;
+        text-align: center !important;
+    }
+
+    #comment-input{
+        z-index: 10!important;
+        width: 500px;
+      }
+    .comment-box{
+        display: flexbox;
+    }
+
+    .main-content-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10vh;
+
+    }
+
+    .main-content-div-public{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10vh;
+        background-color: white;
+        min-height: 100vh;
+    }
+    .top-layer{
+        display: hidden;
+    }
+}
+
+
+
+.input{
+    color:white;
+    background-color: black;
+    border-radius: 4px;
+}
+
+.button-group1{
+    border-radius: 5px;
+    display:flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.button-group1 .button{
+    border-radius: 4px;
+    background: black;
+    width: 100px;
+    height: 35px;
+    font-size: 19px;
+    color: white;
+    font-weight: 600;
+    justify-content: right;
+    align-content: right;
+}
+
+.create-button{
+    position:relative;
+    bottom: 45px;
+    left: 274px;
+}
+
+.go-back-button{
+    border-radius: 4px;
+    background-color: #008bf6;
+    outline: none;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 19px;
+    color: white;
+    font-weight: 600;
+    justify-content: right;
+    align-content: right;
+
+}
+.get-account-button{
+    border-radius: 5px;
+    background-color: orange;
+    outline: none;
+    border: none;
+    width: 130px;
+    height: 40px;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    justify-content: right;
+    align-content: right;
+}
+.log-out-button{
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 5px;
+    background-color: red;
+    outline: none;
+    border: none;
+    width: 130px;
+    height: 40px;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    justify-content: right;
+    align-content: right;
+}
+
+.change-pw-button{
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 5px;
+    background-color: green;
+    outline: none;
+    border: none;
+    width: 130px;
+    height: 40px;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    justify-content: right;
+    align-content: right;
+}
+
+#output_text{
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+    align-content: left;
+}
+
+
+.error-message{
+  color: red;
+  margin-top: 5px;
+}
+
+.hidden {
+  color: white !important;
+  margin-top: 5px;
+}
+
+.login-button{
+    border-radius: 5px;
+    background-color: greenyellow;
+    outline: none;
+    border: none;
+    width: 130px;
+    height: 40px;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    justify-content: right;
+    align-content: right;
+}
+
+.get-account-button2{
+    border-radius: 5px;
+    background-color: darkgray;
+    outline: none;
+    border: none;
+    width: 130px;
+    height: 40px;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    justify-content: right;
+    align-content: right;
+}
+
+.background-public-page{
+    background-color: #FBFBFB;
+}
+
+.logo{
+    height: 30px;
+}
+.nav-link{
+    margin-left: 20px
+}
+
+ul{
+    padding-left: 0rem !important;
+}
+
+.star {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: light-gray;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.star.active {
+  background-color: gold;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.home *, ::after, ::before{
+    box-sizing: border-box;
+
+}
+.headline{
+    justify-content: center !important;
+}
+
+.sample-review1{
+    max-width: 800px;
+    z-index: 1 !important;
+    color: black;
+    padding: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.sample-review2{
+    max-width: 800px;
+    z-index: 1 !important;
+    color: white;
+    padding: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.form-label{
+    color: black !important;
+}
+.comment-button{
+    background-color: transparent;
+    border:1.5px solid black;
+    border-radius: 13%;
+    padding: 3px;
+    padding-top: 2px;
+}
+.comment-button:hover {
+    background-color: #E5E4E2; /* New button color on hover */
+}
+
+.share-button{
+    background-color: transparent;
+    border:1.5px solid black;
+    border-radius: 13%;
+    padding: 3px;
+    padding-top: 2px;
+}
+.share-button:hover {
+    background-color: #E5E4E2; /* New button color on hover */
+}
+.close-button{
+    background-color: transparent;
+    border:1.5px solid black;
+    border-radius: 8%;
+    padding: 3px;
+    padding-top: 2px;
+}
+.comment-img{
+    height: 20px;
+    width: 25px;
+}
+.share-img{
+    height: 20px;
+    width: 25px;
+}
+.button-cluster{
+    text-align: left;
+}
+
+.generic-button{
+    background-color: transparent;
+    border:1.5px solid black;
+    border-radius: 6%;
+}
+
+
+/* pop up dialog box */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+
+
+  /* Style for the dialog box */
+  .dialog-box {
+    width: 80vw;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 3;
+  }
+  /* Style for the comment history visibility toggle */
+.line{
+    height: 1px;
+    /* background-color: #E5E4E2; */
+    border-top: 3px double rgba(229, 228, 226, 0.5);
+    margin-bottom: 15px;
+    margin-left: 250px;
+    margin-right: 250px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profile-text{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.col-12{
+    margin-bottom:35px!important;
+}
+
+.text-white{
+    color: #3498db!important; /* Default background color */
+    transition: background-color 0.3s ease!important; /* Add a smooth transition effect */
+}
+.text-white::hover{
+    color: #e74c3c!important; /* Background color on hover */
+}
+
